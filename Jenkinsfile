@@ -1,7 +1,10 @@
 pipeline{
+    agent any
     stages{
         stage("test1"){
-            print("${branchName}")
+            steps{
+                print("${branchName}")
+            }
         }
     }
 }
